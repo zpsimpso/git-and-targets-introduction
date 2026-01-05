@@ -19,8 +19,17 @@ Git is a software which is used to keep track of files that are being simultaneo
 
 Targets is an R-package, which allows you to build Make-like pipelines (so you can create reproducible workflows) for statistics and data science. The package skips costly runtime for tasks that are already up to date, orchestrates the necessary computation with implicit parallel computing, and abstracts files as R objects (more efficiency).
 
+Targets has a minimum structure of
+```
+├── _targets.R
+├── R/
+│   ├── functions.R
+```
+
 ## Important Git vocabulary
 
+- repositories
+- branches
 - fork
 - clone
 - push and pull
@@ -33,7 +42,7 @@ git clone
 git status
 git pull 
 git add .
-git commit -m
+git commit -m "MESSAGE"
 git push
 ```
 
@@ -47,4 +56,6 @@ tar_read()
 ## Why use Git and Targets?
 
 You can work collaboratively on your code (which will make it better eventually), track changes and easily publish all data (for reproducibility and to have a backup). Further, you can run the whole workflow again later without needing to remember all details. 
+
+## Next? Do the [GitHub](https://github.com/skills/introduction-to-github) and [Targets](https://books.ropensci.org/targets/walkthrough.html) tutorials
 
